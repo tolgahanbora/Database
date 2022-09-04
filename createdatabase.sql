@@ -1,1 +1,9 @@
+CREATE TABLE and INSERT INTO ;
 
+CREATE TABLE author (   
+ 	id SERIAL PRIMARY KEY,
+	username VARCHAR(20) NOT NULL,
+	passwords VARCHAR(20) NOT NULL,
+	email VARCHAR(100) NOT NULL
+	
+);
