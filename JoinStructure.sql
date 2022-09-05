@@ -9,3 +9,18 @@ LEFT JOIN and FULL JOIN:
 
 SELECT city,country FROM city LEFT JOIN country ON city.city_id = country.country_id;
 SELECT first_name, last_name FROM customer FULL JOIN rental ON rental.rental_id = customer.customer_id
+
+
+UNION, UNION ALL and INTERSECT, EXCEPT :
+
+SELECT first_name FROM actor 
+UNION ALL
+SELECT first_name FROM customer;
+
+SELECT first_name FROM actor 
+INTERSECT
+SELECT first_name FROM customer;
+
+SELECT first_name FROM actor 
+EXCEPT
+SELECT first_name FROM customer
